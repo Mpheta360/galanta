@@ -849,7 +849,7 @@ body{
           padding: 50px 40px; }
         .d-flex{
           display: block;
-          
+
         }
         }
       .login-content h3 {
@@ -914,7 +914,6 @@ body{
           padding: 2.5rem 1rem 2.125rem 1rem;
         }
         .col-lg-6 ,.col-lg-5{
-          height: 70vh;
           margin: 20px;
           border-radius: 10px;
         }
