@@ -936,6 +936,153 @@ body{
         .back-home:hover{
           color: #fff; opacity: 0.8;
         }
+        .shareholding-summary {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.shareholding-amount {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Contribution History Section */
+.contribution-history table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.contribution-history table th,
+.contribution-history table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.contribution-history table th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Investment Returns Section */
+.investment-returns {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Shareholding Growth Section */
+.shareholding-growth {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    .shareholding-amount {
+        font-size: 2.5rem;
+    }
+}
+.penalty-summary {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.penalty-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #dc3545;
+}
+
+/* Penalty History Section */
+.penalty-history table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.penalty-history table th,
+.penalty-history table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.penalty-history table th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Manage Penalties Section (Executive Users) */
+.manage-penalties {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.manage-penalties form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.manage-penalties form label {
+  grid-column: span 2;
+}
+
+.manage-penalties form input,
+.manage-penalties form select,
+.manage-penalties form button {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.manage-penalties form button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  grid-column: span 2;
+}
+
+.manage-penalties form button:hover {
+  background-color: #a71d2a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      width: 95%;
+  }
+
+  .manage-penalties form {
+      grid-template-columns: 1fr;
+  }
+}
 /*******************/
 /*     loan form     */
 /*******************/
