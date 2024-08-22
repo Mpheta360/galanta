@@ -122,39 +122,24 @@
                   <h5 style="text-decoration: underline;">Company Contributions Overview</h5>
                   <div class="container mt-50">
                     <div>
-                        <canvas id="myChart"></canvas>
+                        <canvas id="companyChart"></canvas>
                     </div>
-                </div>                  
+                    <br>
+                    <h3 >Total Contributions: MK 200, 000, 000 </h3> 
+                </div> 
+                                
               </div> <!-- end of text-box -->
           </div> <!-- end of col -->
-          <div class="col-lg-5">
-            <div class="text-box" >
-                <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true" style="display: block; border-radius: 10px;">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" style=" border-radius: 10px;">
-                      <img src="imgs/flat-rafting-illustration_52683-104747.avif" class="d-block w-120" alt="...">
-                      <div class="carousel-caption d-md-block">
-                        <h3 >Galantas. Contributions </h3>
-                        <p >Place your announcements here!</p>
-                      </div>
-                    </div>
-                    <div class="carousel-item" style="width: 100%; border-radius: 10px;">
-                      <img src="imgs/flat-rafting-illustration_52683-104747.avif" class="d-block w-120" alt="...">
-                      <div class="carousel-caption d-md-block">
-                        <h3 >Galantas. Contributions </h3>
-                        <p >Place your announcements here!</p>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+          <div class="col-lg-5 clm">
+            <div class="text-box" style="padding: 1rem;">
+              <h5 style="text-decoration: underline;">My Contributions Overview</h5>
+              <div class="container mt-50">
+                <div>
+                    <canvas id="myChart"></canvas>
                 </div>
+                <br>
+                <h3 >My Contributions: MK 10, 000, 000 </h3> 
+            </div> 
             </div> <!-- end of text-box -->
         </div> <!-- end of col -->
       
@@ -278,8 +263,32 @@
             datasets: [
                 {
                     label: "contribution",
-                    data: [30000, 25000, 40000, 65000, 150000],
+                    data: [30000, 25000, 40000, 65000, 50000,100000],
                     backgroundColor: "rgb(11,54,168)",
+                }
+            ],
+        },
+    });
+  </script>
+   <script>
+    let ct = document.getElementById("companyChart").getContext("2d");
+    let companyChart = new Chart(ct, {
+        type: "line",
+        data: {
+            labels: [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+            ],
+            datasets: [
+                {
+                    label: "contribution",
+                    data: [310000, 252000, 400000, 650000, 1500000,100000],
+                    backgroundColor: "rgb(11,54,163)",
                 }
             ],
         },
